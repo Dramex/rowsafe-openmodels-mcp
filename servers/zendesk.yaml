@@ -1,66 +1,33 @@
 id: zendesk
 name: Zendesk MCP Server
 description: >
-  MCP server for Zendesk Support. Lets AI agents search and read tickets, add comments and replies,
-  update ticket status and fields, and query help-center articles. Useful for building support
-  copilots, triaging and summarizing tickets, and drafting grounded responses from an AI assistant.
+  Community MCP server for Zendesk. It provides tools for retrieving and managing tickets and
+  comments, prompts for ticket analysis and response drafting, and access to Help Center
+  articles as a knowledge base. Supports OAuth and API-token authentication.
 author:
-  name: Reza Zeraat
-  github: reza-gholizade
-repository: https://github.com/reza-gholizade/zendesk-mcp-server
-transport:
-  - stdio
+  name: reminia
+  github: reminia
+repository: https://github.com/reminia/zendesk-mcp-server
+transport: [stdio]
 category: Communication
-tags:
-  - zendesk
-  - customer-support
-  - helpdesk
-  - tickets
-  - communication
+tags: [zendesk, support, tickets, customer-service, help-center]
 created_at: "2026-07-09T00:00:00.000Z"
-updated_at: "2026-07-09T00:00:00.000Z"
-tools:
-  - name: search_tickets
-    description: Search Zendesk tickets using a query and optional filters.
-    input_schema:
-      type: object
-      properties:
-        query:
-          type: string
-          description: Search query (Zendesk search syntax)
-      required:
-        - query
-  - name: add_ticket_comment
-    description: Add a public reply or internal note to a ticket.
-    input_schema:
-      type: object
-      properties:
-        ticket_id:
-          type: integer
-          description: Zendesk ticket ID
-        body:
-          type: string
-          description: Comment body
-        public:
-          type: boolean
-          description: Whether the comment is public
-      required:
-        - ticket_id
-        - body
+updated_at: "2026-10-01T00:00:00.000Z"
 install:
-  command: uvx
-  args:
-    - "zendesk-mcp-server"
+  command: uv
+  args: ["--directory", "/path/to/zendesk-mcp-server", "run", "zendesk"]
 env_vars:
   - name: ZENDESK_SUBDOMAIN
-    description: Zendesk subdomain (e.g., yourcompany)
+    description: Zendesk subdomain, for example acme for https://acme.zendesk.com
     required: true
+  - name: ZENDESK_CLIENT_ID
+    description: Identifier of the Zendesk OAuth client
+    required: false
   - name: ZENDESK_EMAIL
-    description: Zendesk agent email for API auth
-    required: true
-  - name: ZENDESK_API_TOKEN
-    description: Zendesk API token
-    required: true
-license: MIT
-version: "0.2.0"
-stars: 180
+    description: Agent email for API-token authentication
+    required: false
+  - name: ZENDESK_API_KEY
+    description: Zendesk API token for API-token authentication
+    required: false
+license: Apache-2.0
+stars: 122

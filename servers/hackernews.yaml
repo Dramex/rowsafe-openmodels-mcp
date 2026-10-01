@@ -1,55 +1,17 @@
 id: hackernews
 name: Hacker News MCP Server
 description: >
-  MCP server for Hacker News. Lets AI agents fetch top, new, best, Ask HN, and Show HN stories,
-  read comment threads, and look up items and users via the official Firebase API. Useful for
-  tracking tech trends, summarizing discussions, and research into what the developer community
-  is talking about.
+  Community MCP server written in Rust that exposes Hacker News to AI assistants over stdio.
+  Agents can read the front page and Ask HN and Show HN stories and follow comment threads.
+  It is built from source with Cargo and run as a local binary.
 author:
-  name: Erick Wendel
-  github: ErickWendel
-repository: https://github.com/erickwendel/hackernews-mcp
-transport:
-  - stdio
+  name: devrelopers
+  github: devrelopers
+repository: https://github.com/devrelopers/hackernews-mcp
+transport: [stdio]
 category: Research
-tags:
-  - hacker-news
-  - tech-news
-  - research
-  - trends
-  - discussions
+tags: [hackernews, news, tech, stories, comments]
 created_at: "2026-07-09T00:00:00.000Z"
-updated_at: "2026-07-09T00:00:00.000Z"
-tools:
-  - name: get_stories
-    description: Fetch stories by type (top, new, best, ask, show, job).
-    input_schema:
-      type: object
-      properties:
-        type:
-          type: string
-          description: Story feed type (top, new, best, ask, show, job)
-        limit:
-          type: integer
-          description: Number of stories to return
-      required:
-        - type
-  - name: get_item
-    description: Retrieve a single item (story, comment, poll) and its metadata by ID.
-    input_schema:
-      type: object
-      properties:
-        id:
-          type: integer
-          description: Hacker News item ID
-      required:
-        - id
-install:
-  npm: "hackernews-mcp"
-  command: npx
-  args:
-    - "-y"
-    - "hackernews-mcp"
+updated_at: "2026-10-01T00:00:00.000Z"
 license: MIT
-version: "0.1.0"
-stars: 220
+stars: 17

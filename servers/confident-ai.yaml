@@ -1,52 +1,18 @@
 id: confident-ai
 name: Confident AI MCP
 description: >
-  Confident AI's official MCP server, connecting AI tools to the platform behind DeepEval for
-  evaluating, observing, and iterating on LLM quality. Agents can trigger and read evaluation runs,
-  inspect metric scores and failing test cases, manage golden datasets, and review production
-  traces to close the loop between eval results and code changes.
+  Confident AI's hosted MCP server, connecting coding agents to a Confident AI project, the
+  platform behind DeepEval. Agents can work with prompt versions and evaluation datasets,
+  cloud evaluations and metrics, production tracing and observability, human annotations,
+  and dashboards. Authentication is OAuth, with US and EU endpoints.
 author:
   name: Confident AI
   github: confident-ai
-repository: https://github.com/confident-ai/confident-mcp-server
-transport:
-  - stdio
+repository: https://www.confident-ai.com/docs/coding-agents/mcp
+transport: [http-streaming]
 category: AI
-tags:
-  - deepeval
-  - llm-evaluation
-  - testing
-  - metrics
-  - observability
-  - regression-testing
+tags: [evals, deepeval, llm-observability, tracing, datasets, prompts]
 created_at: "2026-08-03T00:00:00.000Z"
-updated_at: "2026-08-03T00:00:00.000Z"
-tools:
-  - name: list_test_runs
-    description: List evaluation test runs and their aggregate metric scores.
-    input_schema:
-      type: object
-      properties:
-        limit:
-          type: integer
-          description: Maximum number of test runs to return
-  - name: get_failing_test_cases
-    description: Retrieve failing test cases for a test run, including metric reasons.
-    input_schema:
-      type: object
-      properties:
-        test_run_id:
-          type: string
-          description: Identifier of the test run
-      required:
-        - test_run_id
-  - name: list_datasets
-    description: List golden datasets available in the workspace.
-    input_schema:
-      type: object
-      properties: {}
-env_vars:
-  - name: CONFIDENT_API_KEY
-    description: Confident AI API key
-    required: true
-license: Apache-2.0
+updated_at: "2026-10-01T00:00:00.000Z"
+install:
+  url: https://mcp.confident-ai.com/mcp

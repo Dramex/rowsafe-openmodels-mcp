@@ -9,7 +9,7 @@ description: >
 author:
   name: Pulumi
   github: pulumi
-repository: https://github.com/pulumi/mcp-server
+repository: https://www.pulumi.com/docs/ai/mcp-server/
 transport:
   - stdio
   - sse
@@ -22,7 +22,7 @@ tags:
   - deployment
   - devops
 created_at: "2026-07-12T00:00:00.000Z"
-updated_at: "2026-07-12T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"
 tools:
   - name: preview
     description: Run a Pulumi preview to show the changes a deployment would make.

@@ -8,7 +8,7 @@ description: >
 author:
   name: Replicate
   github: replicate
-repository: https://github.com/replicate/mcp
+repository: https://replicate.com/docs/reference/mcp
 transport:
   - stdio
 category: AI
@@ -20,7 +20,7 @@ tags:
   - models
   - media
 created_at: "2026-07-09T00:00:00.000Z"
-updated_at: "2026-07-09T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"
 tools:
   - name: search_models
     description: Search Replicate's catalog of hosted models by keyword.
@@ -47,15 +47,13 @@ tools:
         - model
         - input
 install:
-  npm: "@replicate/mcp"
+  npm: "replicate-mcp"
   command: npx
   args:
     - "-y"
-    - "@replicate/mcp"
+    - "replicate-mcp"
 env_vars:
   - name: REPLICATE_API_TOKEN
     description: Replicate API token
     required: true
 license: Apache-2.0
-version: "0.2.0"
-stars: 520

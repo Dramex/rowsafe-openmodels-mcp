@@ -5,6 +5,18 @@ All notable changes to the OpenModels MCP Server Registry will be documented in 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.13.1] - 2026-10-01
+### Fixed
+- Replaced 15 repository links that returned 404:
+  - Official servers without a public repository now link to the vendor's MCP documentation: `asana`, `hubspot`, `shopify`, `pulumi`, `replicate`, `plaid`, `algolia`, `confident-ai`, and the three Microsoft Agent 365 entries (`microsoft-365-copilot-chat`, `microsoft-onedrive-sharepoint`, `microsoft-sharepoint-lists`).
+  - `dropbox` now points to `dropbox/mcp-server-dash`, `wolfram-alpha` to `WolframResearch/AgentTools`, `zendesk` to `reminia/zendesk-mcp-server`, and `hackernews` to `devrelopers/hackernews-mcp`.
+- Rewrote `dropbox`, `plaid`, `wolfram-alpha`, `algolia`, `confident-ai`, `hackernews`, and `zendesk` so the description, author, transport, install, and tools match the linked source.
+- Corrected the `replicate` install package to `replicate-mcp` and the `shopify` license to ISC, and dropped star counts, versions, and licenses that referred to repositories that do not exist.
+### Removed
+- `anthropic` and `openai`: the described servers, repositories, and npm packages do not exist.
+### Changed
+- Total MCP servers: 230 (from 232).
+
 ## [1.13.0] - 2026-10-01
 ### Added
 - Fifteen source-backed MCP server entries, weighted toward under-covered categories:

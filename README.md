@@ -6,7 +6,7 @@ A community-maintained registry of MCP (Model Context Protocol) servers — stru
 
 | Metric | Count |
 |--------|-------|
-| Servers | 232 |
+| Servers | 230 |
 | Categories | 11 |
 | Transport types | 3 (stdio, sse, http-streaming) |
 
@@ -70,8 +70,6 @@ mcp/
 │   ├── xcode.yaml
 │   ├── aws.yaml
 │   ├── terraform.yaml
-│   ├── anthropic.yaml
-│   ├── openai.yaml
 │   ├── datadog.yaml
 │   ├── posthog.yaml
 │   ├── resend.yaml
@@ -210,11 +208,9 @@ the complete 207-server registry.
 | [VSCode](servers/vscode.yaml) | Development | acomagu | stdio |
 | [Xcode](servers/xcode.yaml) | Development | Apple | stdio |
 | [AWS](servers/aws.yaml) | Cloud | AWS Labs | stdio |
-| [Anthropic](servers/anthropic.yaml) | AI | Anthropic | stdio |
 | [ChromaDB](servers/chromadb.yaml) | Database | Chroma | stdio |
 | [ClickHouse](servers/clickhouse.yaml) | Database | ClickHouse | stdio |
 | [Datadog](servers/datadog.yaml) | DevOps | Datadog | stdio |
-| [OpenAI](servers/openai.yaml) | AI | OpenAI | stdio |
 | [PostHog](servers/posthog.yaml) | Productivity | PostHog | stdio |
 | [Resend](servers/resend.yaml) | Communication | Resend | stdio |
 | [Terraform](servers/terraform.yaml) | Cloud | HashiCorp | stdio |
