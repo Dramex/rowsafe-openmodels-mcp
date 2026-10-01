@@ -8,7 +8,7 @@ description: >
 author:
   name: Resend
   github: resend
-repository: https://github.com/resend/resend-mcp-server
+repository: https://github.com/resend/resend-mcp
 transport:
   - stdio
 category: Communication
@@ -20,7 +20,7 @@ tags:
   - templates
   - communication
 created_at: "2026-04-10T00:00:00.000Z"
-updated_at: "2026-05-25T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"
 tools:
   - name: send_email
     description: Send a transactional email through Resend with HTML content or a template.

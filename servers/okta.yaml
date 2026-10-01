@@ -1,0 +1,36 @@
+id: okta
+name: Okta MCP Server
+description: >
+  Okta's self-hosted MCP server for managing an Okta organization through natural
+  language. It works with users, groups, applications, policies, and logs through the
+  Okta APIs, with access limited by the OAuth scopes granted to the configured client.
+author:
+  name: Okta
+  github: okta
+repository: https://github.com/okta/okta-mcp-server
+transport: [stdio]
+category: Security
+tags: [okta, identity, iam, sso, user-management]
+created_at: "2026-10-01T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"
+install:
+  command: docker
+  args: ["run", "-i", "--rm", "-e", "OKTA_ORG_URL", "-e", "OKTA_CLIENT_ID", "-e", "OKTA_SCOPES", "-e", "OKTA_PRIVATE_KEY", "-e", "OKTA_KEY_ID", "okta-mcp-server"]
+env_vars:
+  - name: OKTA_ORG_URL
+    description: Okta organization URL
+    required: true
+  - name: OKTA_CLIENT_ID
+    description: Client ID of the Okta API services application
+    required: true
+  - name: OKTA_SCOPES
+    description: Space-separated Okta OAuth scopes granted to the server
+    required: true
+  - name: OKTA_PRIVATE_KEY
+    description: Private key for private-key JWT authentication
+    required: false
+  - name: OKTA_KEY_ID
+    description: Key ID matching the private key
+    required: false
+license: Apache-2.0
+stars: 66

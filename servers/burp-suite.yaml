@@ -1,0 +1,18 @@
+id: burp-suite
+name: Burp Suite MCP Server
+description: >
+  PortSwigger's official MCP server for Burp Suite. It runs as a Burp extension and
+  exposes Burp's web security testing capabilities to MCP clients, so an agent can
+  work with HTTP traffic and Burp tooling during authorized penetration tests and
+  security reviews.
+author:
+  name: PortSwigger
+  github: PortSwigger
+repository: https://github.com/PortSwigger/mcp-server
+transport: [stdio, sse]
+category: Security
+tags: [burp-suite, web-security, penetration-testing, http, appsec]
+created_at: "2026-10-01T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"
+license: GPL-3.0
+stars: 1203

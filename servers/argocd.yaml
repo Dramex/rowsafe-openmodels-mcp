@@ -1,0 +1,27 @@
+id: argocd
+name: Argo CD MCP Server
+description: >
+  MCP server for Argo CD from argoproj-labs. It lets agents list and inspect Argo CD
+  applications, review sync and health status, resources, events, and logs, and
+  trigger application operations such as sync through the Argo CD API.
+author:
+  name: Argo Project Labs
+  github: argoproj-labs
+repository: https://github.com/argoproj-labs/mcp-for-argocd
+transport: [stdio, http-streaming]
+category: DevOps
+tags: [argocd, gitops, kubernetes, continuous-delivery, deployments]
+created_at: "2026-10-01T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"
+install:
+  command: npx
+  args: ["argocd-mcp@latest", "stdio"]
+env_vars:
+  - name: ARGOCD_BASE_URL
+    description: Base URL of the Argo CD server
+    required: true
+  - name: ARGOCD_API_TOKEN
+    description: Argo CD API token
+    required: true
+license: Apache-2.0
+stars: 578

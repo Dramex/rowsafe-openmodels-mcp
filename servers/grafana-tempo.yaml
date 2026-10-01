@@ -7,7 +7,7 @@ description: >
 author:
   name: Grafana Labs
   github: grafana
-repository: https://github.com/grafana/tempo-mcp-server
+repository: https://github.com/grafana-cold-storage/tempo-mcp-server
 transport:
   - stdio
 category: DevOps
@@ -19,7 +19,7 @@ tags:
   - traceql
   - distributed-tracing
 created_at: "2026-07-25T00:00:00.000Z"
-updated_at: "2026-07-25T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"
 tools:
   - name: search_traces
     description: Search traces in Grafana Tempo using a TraceQL query.

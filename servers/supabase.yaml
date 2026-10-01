@@ -8,7 +8,7 @@ description: >
 author:
   name: Supabase
   github: supabase
-repository: https://github.com/supabase-community/supabase-mcp
+repository: https://github.com/supabase/mcp
 transport:
   - stdio
 category: Database
@@ -20,7 +20,7 @@ tags:
   - authentication
   - storage
 created_at: "2025-03-20T00:00:00.000Z"
-updated_at: "2026-05-25T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"
 tools:
   - name: execute_sql
     description: Execute a SQL query against the Supabase PostgreSQL database.

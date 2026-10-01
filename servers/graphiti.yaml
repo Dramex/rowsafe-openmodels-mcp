@@ -1,0 +1,22 @@
+id: graphiti
+name: Graphiti MCP Server
+description: >
+  MCP server from Zep's Graphiti project for building real-time, temporally aware
+  knowledge graphs as agent memory. Agents can add episodes, search nodes and facts,
+  and manage graph data, giving assistants persistent memory that tracks how
+  information changes over time.
+author:
+  name: Zep
+  github: getzep
+repository: https://github.com/getzep/graphiti
+transport: [stdio, http-streaming]
+category: AI
+tags: [knowledge-graph, agent-memory, graph-database, temporal, retrieval]
+created_at: "2026-10-01T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"
+env_vars:
+  - name: OPENAI_API_KEY
+    description: API key for the default LLM and embedding provider
+    required: false
+license: Apache-2.0
+stars: 31332

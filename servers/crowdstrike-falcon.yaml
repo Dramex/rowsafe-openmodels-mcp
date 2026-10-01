@@ -1,0 +1,31 @@
+id: crowdstrike-falcon
+name: CrowdStrike Falcon MCP Server
+description: >
+  CrowdStrike's MCP server connecting AI agents to the Falcon platform for automated
+  security analysis and threat hunting. Tools are grouped into modules that can be
+  enabled selectively, and access is governed by the scopes of the Falcon API client
+  used.
+author:
+  name: CrowdStrike
+  github: CrowdStrike
+repository: https://github.com/CrowdStrike/falcon-mcp
+transport: [stdio, sse, http-streaming]
+category: Security
+tags: [crowdstrike, falcon, threat-hunting, edr, detections, incident-response]
+created_at: "2026-10-01T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"
+install:
+  command: uvx
+  args: ["--env-file", "/path/to/.env", "falcon-mcp"]
+env_vars:
+  - name: FALCON_CLIENT_ID
+    description: CrowdStrike Falcon API client ID
+    required: true
+  - name: FALCON_CLIENT_SECRET
+    description: CrowdStrike Falcon API client secret
+    required: true
+  - name: FALCON_BASE_URL
+    description: Falcon API base URL for your cloud region
+    required: false
+license: MIT
+stars: 259

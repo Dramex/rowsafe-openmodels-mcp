@@ -8,7 +8,7 @@ description: >
 author:
   name: Twilio
   github: twilio
-repository: https://github.com/twilio/twilio-mcp-server
+repository: https://github.com/twilio-labs/mcp
 transport:
   - stdio
 category: Communication
@@ -20,7 +20,7 @@ tags:
   - communication
   - phone
 created_at: "2026-04-01T00:00:00.000Z"
-updated_at: "2026-05-20T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"
 tools:
   - name: send_sms
     description: Send an SMS message using Twilio's Programmable SMS API.

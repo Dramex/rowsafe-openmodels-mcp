@@ -1,0 +1,23 @@
+id: jina
+name: Jina AI MCP Server
+description: >
+  Jina AI's official remote MCP server. It exposes Jina's Reader, search, embeddings,
+  and reranker APIs as tools for reading web pages as clean text, searching the web,
+  and ranking results. An API key is optional and raises rate limits.
+author:
+  name: Jina AI
+  github: jina-ai
+repository: https://github.com/jina-ai/MCP
+transport: [http-streaming]
+category: Research
+tags: [jina, web-reader, web-search, embeddings, reranker]
+created_at: "2026-10-01T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"
+install:
+  url: https://mcp.jina.ai/v1
+env_vars:
+  - name: JINA_API_KEY
+    description: Optional Jina API key sent as a bearer token
+    required: false
+license: Apache-2.0
+stars: 869

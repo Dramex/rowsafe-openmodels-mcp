@@ -1,0 +1,20 @@
+id: home-assistant
+name: Home Assistant MCP Server
+description: >
+  Community MCP server for Home Assistant. It lets agents query and control smart-home
+  entities, call services, and manage automations, scripts, and dashboards on a Home
+  Assistant instance. Can run as a Home Assistant component or as a standalone server.
+author:
+  name: Home Assistant AI Community
+  github: homeassistant-ai
+repository: https://github.com/homeassistant-ai/ha-mcp
+transport: [stdio, http-streaming]
+category: Productivity
+tags: [home-assistant, smart-home, iot, automation, home-automation]
+created_at: "2026-10-01T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"
+install:
+  command: uvx
+  args: ["ha-mcp@latest"]
+license: MIT
+stars: 4902

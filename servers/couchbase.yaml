@@ -9,7 +9,7 @@ description: >
 author:
   name: Couchbase Ecosystem
   github: Couchbase-Ecosystem
-repository: https://github.com/Couchbase-Ecosystem/mcp-server-couchbase
+repository: https://github.com/couchbase/mcp-server-couchbase
 transport:
   - stdio
 category: Database
@@ -20,7 +20,7 @@ tags:
   - n1ql
   - query
 created_at: "2026-07-12T00:00:00.000Z"
-updated_at: "2026-07-12T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"
 tools:
   - name: run_sql_plus_plus_query
     description: Execute a SQL++ (N1QL) query against the configured Couchbase bucket.

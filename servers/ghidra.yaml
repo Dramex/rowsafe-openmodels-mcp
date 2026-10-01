@@ -1,0 +1,21 @@
+id: ghidra
+name: GhidraMCP
+description: >
+  MCP server for the Ghidra reverse-engineering suite. A Ghidra plugin exposes program
+  analysis over HTTP and a Python bridge serves it to MCP clients, letting an agent
+  decompile and analyze binaries, list functions, classes, imports, and exports, and
+  rename methods and data during reverse-engineering work.
+author:
+  name: LaurieWired
+  github: LaurieWired
+repository: https://github.com/LaurieWired/GhidraMCP
+transport: [stdio, sse]
+category: Security
+tags: [ghidra, reverse-engineering, binary-analysis, decompiler, malware-analysis]
+created_at: "2026-10-01T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"
+install:
+  command: python
+  args: ["/ABSOLUTE_PATH_TO/bridge_mcp_ghidra.py", "--ghidra-server", "http://127.0.0.1:8080/"]
+license: Apache-2.0
+stars: 10233

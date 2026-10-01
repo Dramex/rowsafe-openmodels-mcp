@@ -1,0 +1,20 @@
+id: blender
+name: Blender MCP
+description: >
+  Community MCP server and Blender add-on that lets an LLM control Blender 3D. Agents
+  can inspect the scene, create and modify objects and materials, and run Python in
+  Blender to build or adjust 3D scenes from natural-language instructions.
+author:
+  name: Siddharth Ahuja
+  github: ahujasid
+repository: https://github.com/ahujasid/mcp-for-blender
+transport: [stdio]
+category: Development
+tags: [blender, 3d, modeling, creative-tools, python]
+created_at: "2026-10-01T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"
+install:
+  command: uvx
+  args: ["mcp-for-blender"]
+license: MIT
+stars: 29775

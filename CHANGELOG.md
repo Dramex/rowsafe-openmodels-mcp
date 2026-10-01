@@ -5,6 +5,22 @@ All notable changes to the OpenModels MCP Server Registry will be documented in 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.13.0] - 2026-10-01
+### Added
+- Fifteen source-backed MCP server entries, weighted toward under-covered categories:
+  - Security: `burp-suite` (PortSwigger), `ghidra` (GhidraMCP), `crowdstrike-falcon`, and `okta`.
+  - Development: `serena` for semantic code retrieval and editing, and `blender` for Blender 3D control.
+  - Filesystem: `desktop-commander` for terminal control, file search, and diff editing.
+  - Browser Automation: `browser-mcp` for automating the user's own browser profile.
+  - Research: `brightdata` and `jina` for web access, reading, and search.
+  - DevOps and Cloud: `argocd` and `gcloud`.
+  - AI: `graphiti` for temporal knowledge-graph agent memory.
+  - Communication and Productivity: `line-bot` and `home-assistant`.
+### Fixed
+- Repository audit: updated 18 entries whose GitHub repository moved or was renamed — `apify`, `apple-mcp`, `aws`, `bigquery`, `chromadb`, `clickhouse`, `couchbase`, `datadog`, `firecrawl`, `grafana-tempo`, `kubernetes`, `openbb`, `posthog`, `resend`, `stripe`, `supabase`, `twilio`, and `xcode`.
+### Changed
+- Total MCP servers: 232 (from 217).
+
 ## [1.12.0] - 2026-09-04
 ### Added
 - Four source-backed MCP server entries:

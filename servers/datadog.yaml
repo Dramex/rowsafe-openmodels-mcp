@@ -8,7 +8,7 @@ description: >
 author:
   name: Datadog
   github: DataDog
-repository: https://github.com/DataDog/datadog-mcp-server
+repository: https://github.com/datadog-labs/mcp-server
 transport:
   - stdio
 category: DevOps
@@ -21,7 +21,7 @@ tags:
   - traces
   - apm
 created_at: "2026-03-10T00:00:00.000Z"
-updated_at: "2026-05-28T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"
 tools:
   - name: query_metrics
     description: Query Datadog metrics using the metrics query language. Returns time series data for visualization or analysis.

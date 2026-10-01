@@ -1,0 +1,27 @@
+id: line-bot
+name: LINE Bot MCP Server
+description: >
+  LINE's official MCP server integrating the LINE Messaging API, connecting an AI
+  agent to a LINE Official Account. Agents can push and broadcast text and flex
+  messages to users and read profile information.
+author:
+  name: LINE
+  github: line
+repository: https://github.com/line/line-bot-mcp-server
+transport: [stdio]
+category: Communication
+tags: [line, messaging, chatbot, messaging-api, notifications]
+created_at: "2026-10-01T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"
+install:
+  command: npx
+  args: ["@line/line-bot-mcp-server"]
+env_vars:
+  - name: CHANNEL_ACCESS_TOKEN
+    description: LINE channel access token
+    required: true
+  - name: DESTINATION_USER_ID
+    description: Default user ID to receive messages
+    required: false
+license: Apache-2.0
+stars: 783

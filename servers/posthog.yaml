@@ -8,7 +8,7 @@ description: >
 author:
   name: PostHog
   github: PostHog
-repository: https://github.com/PostHog/posthog-mcp-server
+repository: https://github.com/PostHog/mcp
 transport:
   - stdio
 category: Productivity
@@ -20,7 +20,7 @@ tags:
   - events
   - funnels
 created_at: "2026-04-15T00:00:00.000Z"
-updated_at: "2026-05-30T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"
 tools:
   - name: query_events
     description: Query PostHog events using HogQL with filters, aggregations, and time ranges.

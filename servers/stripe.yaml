@@ -9,7 +9,7 @@ description: >
 author:
   name: Stripe
   github: stripe
-repository: https://github.com/stripe/agent-toolkit
+repository: https://github.com/stripe/ai
 transport:
   - stdio
 category: Development
@@ -21,7 +21,7 @@ tags:
   - api
   - e-commerce
 created_at: "2025-04-05T00:00:00.000Z"
-updated_at: "2026-05-26T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"
 tools:
   - name: create_customer
     description: Create a new Stripe customer with email, name, and metadata.

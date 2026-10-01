@@ -9,7 +9,7 @@ description: >
 author:
   name: Mendable
   github: mendableai
-repository: https://github.com/mendableai/firecrawl-mcp-server
+repository: https://github.com/firecrawl/firecrawl-mcp-server
 transport:
   - stdio
 category: Research
@@ -21,7 +21,7 @@ tags:
   - content-extraction
   - data-pipeline
 created_at: "2025-03-10T00:00:00.000Z"
-updated_at: "2026-05-26T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"
 tools:
   - name: firecrawl_scrape
     description: Scrape a single URL and return clean markdown or structured content.

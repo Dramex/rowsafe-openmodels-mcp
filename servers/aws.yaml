@@ -8,7 +8,7 @@ description: >
 author:
   name: AWS Labs
   github: awslabs
-repository: https://github.com/awslabs/aws-mcp-server
+repository: https://github.com/awslabs/mcp
 transport:
   - stdio
 category: Cloud
@@ -21,7 +21,7 @@ tags:
   - cloud
   - infrastructure
 created_at: "2026-02-01T00:00:00.000Z"
-updated_at: "2026-05-25T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"
 tools:
   - name: s3_list_objects
     description: List objects in an S3 bucket with optional prefix filtering.

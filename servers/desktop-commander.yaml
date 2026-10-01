@@ -1,0 +1,22 @@
+id: desktop-commander
+name: Desktop Commander
+description: >
+  Desktop Commander gives an MCP client terminal control, file system search, and
+  diff-based file editing on the local machine. It can run and manage long-running
+  commands and processes, search files and code, and apply surgical text replacements,
+  which makes it useful for local development and automation without a separate IDE
+  agent.
+author:
+  name: Eduard Ruzga
+  github: wonderwhy-er
+repository: https://github.com/wonderwhy-er/DesktopCommanderMCP
+transport: [stdio]
+category: Filesystem
+tags: [terminal, filesystem, file-editing, process-management, local-automation]
+created_at: "2026-10-01T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"
+install:
+  command: npx
+  args: ["-y", "@wonderwhy-er/desktop-commander@latest"]
+license: MIT
+stars: 9858

@@ -1,0 +1,19 @@
+id: serena
+name: Serena
+description: >
+  Serena is an open-source coding-agent toolkit that gives MCP clients IDE-like
+  capabilities. It uses language servers for semantic code retrieval and symbol-level
+  editing, so agents can find symbols, references, and definitions and edit code
+  precisely instead of relying on line numbers or plain text search across large
+  codebases.
+author:
+  name: Oraios AI
+  github: oraios
+repository: https://github.com/oraios/serena
+transport: [stdio, http-streaming]
+category: Development
+tags: [coding-agent, language-server, semantic-search, code-editing, refactoring]
+created_at: "2026-10-01T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"
+license: GPL-3.0-or-later
+stars: 29924

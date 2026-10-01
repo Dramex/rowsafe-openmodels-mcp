@@ -10,7 +10,7 @@ description: >
 author:
   name: Marc Nuri
   github: manusa
-repository: https://github.com/manusa/kubernetes-mcp-server
+repository: https://github.com/containers/kubernetes-mcp-server
 transport:
   - stdio
   - http-streaming
@@ -25,7 +25,7 @@ tags:
   - cloud-native
   - infrastructure
 created_at: "2026-05-31T00:00:00.000Z"
-updated_at: "2026-05-31T00:00:00.000Z"
+updated_at: "2026-10-01T00:00:00.000Z"
 tools:
   - name: pods_list
     description: >
