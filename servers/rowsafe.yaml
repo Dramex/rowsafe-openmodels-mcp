@@ -6,7 +6,7 @@ description: >
   and is read-only by default. The --allow-restore-points option additionally
   exposes restore-point creation for checkpoints before risky database changes.
   Install the RowSafe CLI and authenticate with rowsafe login before starting
-  the server. Requires a RowSafe account and configured databases. The agent,
+  the server. Configure the databases to inspect. The agent,
   CLI, and MCP server are Apache-2.0 licensed; the hosted RowSafe service is
   separate. Documentation and setup: https://rowsafe.sh/docs.
 author:
